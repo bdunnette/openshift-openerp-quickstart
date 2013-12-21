@@ -1,16 +1,18 @@
 # OpenShift OpenERP quickstart
 
-This quickstart contains an OpenERP installation ready to run on OpenShift. It uses nginx to serve static files and runs under python-2.7.
+Este quickstart contém uma instalação do OpenERP pronta para rodar no OpenShift. Ele usa nginx para servir arquivos estáticos e roda sobre python-2.7
 
-## Create your app
+Se você ainda não tem uma conta na Getup, vá em http://getupcloud.com e registre-se gratuitamente.
 
-First, create an application with PostgreSQL:
+## Crie seu app
+
+Primeiro, crie uma aplicação com PostgreSQL:
 
 ```
 $ rhc app create openerp https://reflector-getupcloud.getup.io/reflect?github=caruccio/openshift-nginx-python postgresql-9
 ```
 
-Then, merge and push this repo into your new app. Please be patient, this operation may last for a long time.
+Depois, faça o merge e o push deste repo para sua aplicação. Por favor seja paciente, esta operação pode demorar. 
 
 ```
 $ cd openerp/
@@ -19,21 +21,21 @@ $ git pull -s recursive -X theirs upstream master
 $ git push
 ```
 
-That is it!
+Pronto!
 
-Point your browser to https://openerp-$namesapce.getup.io.
-Default credentials are:
+Aponte seu browser para [https://openerp-$namesapce.getup.io](https://openerp-$namesapce.getup.io) e faça login.
+As credentials padrão são:
 
 ```
 Username: admin
 Password: admin
 ```
 
-## Upgrade
+## Atualização
 
-This quickstart ships with a nightly build of opernerp from file http://nightly.openerp.com/7.0/nightly/src/openerp-7.0-20131221-002451.tar.gz
+Este quickstart é distribuido com um build noturno do openerp, a partir do arquivo  http://nightly.openerp.com/7.0/nightly/src/openerp-7.0-20131221-002451.tar.gz
 
-To upgrade openerp source, replace the content of directory `wsgi/openerp` with a new version:
+Para atualizar o código do openerp, substitua o conteúdo do diretório `wsgi/openerp` com uma nova versão:
 
 ```
 $ cd openerp/
