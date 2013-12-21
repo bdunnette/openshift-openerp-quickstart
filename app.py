@@ -39,6 +39,8 @@ if __name__ == '__main__':
    #  Use gevent if we have it, if fails try cherrypy, otherwise run a simple httpd server.
    try:
       run_gevent_server(zapp.application, ip, port)
+   except KeyboardInterrupt:
+       print("terminating by SIGINT")
    except:
        print("gevent probably not installed - trying CherryPy ...")
        try:

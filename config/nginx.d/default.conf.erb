@@ -25,8 +25,9 @@ server {
         log_not_found off;
     }
 
-    # Serving static files under /static/
-    location /static/ {
+    # Serving static files under /web/static/
+    location /web/static/ {
+        root <%= ENV['OPENSHIFT_REPO_DIR'] %>/wsgi/openerp/openerp/addons/;
         try_files $uri $uri/ =404;
     }
 }
