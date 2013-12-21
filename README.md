@@ -7,7 +7,7 @@ This quickstart contains an OpenERP installation ready to run on OpenShift. It u
 First, create an application with PostgreSQL:
 
 ```
-$ rhc app create openerp https://reflector-getupcloud.getup.io/reflect?github=caruccio/openshift-openerp-quickstart postgresql-9
+$ rhc app create openerp https://reflector-getupcloud.getup.io/reflect?github=caruccio/openshift-nginx-python postgresql-9
 ```
 
 Then, merge and push this repo into your new app. Please be patient, this operation may last for a long time.
