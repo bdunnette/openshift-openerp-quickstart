@@ -35,7 +35,7 @@ Password: admin
 
 Este quickstart é distribuido com um build noturno do openerp, a partir do arquivo  http://nightly.openerp.com/7.0/nightly/src/openerp-7.0-20131221-002451.tar.gz
 
-Para atualizar o código do openerp, substitua o conteúdo do diretório `wsgi/openerp` com uma nova versão:
+Para atualizar o código do openerp, substitua o conteúdo do diretório `wsgi/openerp` com uma nova versão. Note que qualquer customização de código poderá ser perdida.
 
 ```
 $ cd openerp/
