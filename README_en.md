@@ -35,7 +35,7 @@ Password: admin
 
 This quickstart ships with a nightly build of opernerp from file http://nightly.openerp.com/7.0/nightly/src/openerp-7.0-20131221-002451.tar.gz
 
-To upgrade openerp source, replace the content of directory `wsgi/openerp` with a new version:
+To upgrade openerp source, replace the content of directory `wsgi/openerp` with a new version. Please note that any code customization may be lost
 
 ```
 $ cd openerp/
