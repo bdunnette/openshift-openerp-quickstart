@@ -23,7 +23,7 @@ $ git push
 
 Pronto!
 
-Aponte seu browser para [https://openerp-$namesapce.getup.io](https://openerp-$namesapce.getup.io) e faça login.
+Aponte seu browser para [https://openerp-$namespace.getup.io](https://openerp-$namespace.getup.io) e faça login.
 As credentials padrão são:
 
 ```
